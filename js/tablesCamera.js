@@ -1,40 +1,44 @@
 $(document).ready( function () {
-    $('#table').DataTable( {
+    $('#tableCamera').DataTable( {
         paging: false,
+        searching: false,
+        bInfo : false,
         dom: 'Dfrtip',
         'ajax': './json/camera.json',
         'columns':  [
             { 'data': 'name' },
             { 'data': 'ausgeliehen',
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
+                    let vari = ``;
                     if (oData.ausgeliehen === "true") {
-                      const vari = `<span>&#128308;</span>`;
+                      vari = `<span>&#128994;</span>`;
                     }
                     else {
-                      const vari = `<span>&#128994;</span>`;
+                      vari = `<span>&#128308;</span>`;
                     }
                     $(nTd).html(vari);
                 }
             },
             { 'data': 'ausleiher',
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
+                    let vari = ``;
                     if (oData.ausgeliehen === "true") {
-                      const vari = `<span>${oData.ausleiher + " am " + oData.datum}</span>`;
+                      vari = `<span>${oData.ausleiher + " am " + oData.datum}</span>`;
                     }
                     else {
-                      const vari = `<span> </span>`;
+                      vari = `<span> </span>`;
                     }
                     $(nTd).html(vari);
                   }
                 },
             { 'data': 'id',
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
+                    let vari = ``;
                     if (oData.ausgeliehen === "false") {
-                      const aLink = `<a href=indexDetail.html?item=${oData.id} style='color: #00B0F0;'>Jetzt ausleihen</a>`;
-                      $(nTd).html(aLink);
+                      vari = `<a href=indexDetail.html?item=${oData.id} style='color: #00B0F0;'>Jetzt ausleihen</a>`;
                     }
                     else {
-                      const vari = `<span>&#128994;</span>`;
+                      vari = `<span>ausgeliehen</span>`;
                     }
                     $(nTd).html(vari);
                 }

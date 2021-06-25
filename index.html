@@ -15,9 +15,6 @@
 
 
     <!-- Scripts -->
-    <!-- Table -->
-    <script src="./js/tablesCamera.js"></script>
-    <script src="./js/tablesHeadset.js"></script>
 
     <!-- jquery -->
     <script src="./js/jquery/jquery-3.6.0.min.js"></script>
@@ -26,6 +23,10 @@
     <!-- Data Files -->
     <script src="./json/camera.json"></script>
     <script src="./json/headset.json"></script>
+
+    <!-- Table -->
+    <script src="./js/tablesCamera.js"></script>
+    <script src="./js/tablesHeadset.js"></script>
 
 
 </head>
@@ -36,28 +37,49 @@
     <section id="title">
         <h1>Control View</h1>
     </section>
-    <section id="control">
-      <div id="tableDiv">
-              <table id="table" class="table table-striped" style="width: 100%;">
-                  <thead>
-                      <tr>
-                          <th>Headset</th>
-                          <th>ausgeliehen</th>
-                          <th>Ausgeleihen von</th>
-                          <th>ausleihen</th>
-                      </tr>
+    <section>
+      <div>
+          <table id="tableCamera" class="table table-striped" style="width: 100%;">
+              <thead>
+                  <tr>
+                      <th>Kamera</th>
+                      <th>ausgeliehen</th>
+                      <th>Ausgeleihen von</th>
+                      <th>ausleihen</th>
+                    </tr>
                   </thead>
                   <tfoot>
-                      <tr>
-                        <th>Headset</th>
-                        <th>ausgeliehen</th>
-                        <th>Ausgeleihen von</th>
-                        <th>ausleihen</th>
-                      </tr>
+                    <tr>
+                      <th>Kamera</th>
+                      <th>ausgeliehen</th>
+                      <th>Ausgeleihen von</th>
+                      <th>ausleihen</th>
+                    </tr>
                   </tfoot>
-              </table>
-
-          </div>
+                </table>
+        </div>
+    </section>
+    <section>
+      <div>
+          <table id="tableHeadset" class="table table-striped" style="width: 100%;">
+              <thead>
+                  <tr>
+                      <th>Headset</th>
+                      <th>ausgeliehen</th>
+                      <th>Ausgeleihen von</th>
+                      <th>ausleihen</th>
+                  </tr>
+              </thead>
+              <tfoot>
+                  <tr>
+                    <th>Headset</th>
+                    <th>ausgeliehen</th>
+                    <th>Ausgeleihen von</th>
+                    <th>ausleihen</th>
+                </tr>
+              </tfoot>
+          </table>
+      </div>
     </section>
 </div>
 
