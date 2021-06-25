@@ -3,16 +3,16 @@
     {
       "id": "1",
       "name": "Headset 1",
-      "ausgeliehen": "true",
-      "ausleiher": "Tim",
-      "datum": "25-04-2020"
+      "ausgeliehen": "false",
+      "ausleiher": "",
+      "datum": ""
     },
     {
       "id": "2",
       "name": "Headset 2",
-      "ausgeliehen": "false",
-      "ausleiher": "",
-      "datum": ""
+      "ausgeliehen": "true",
+      "ausleiher": "Fritz",
+      "datum": "15-05-2018"
     },
     {
       "id": "3",

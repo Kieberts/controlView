@@ -38,7 +38,7 @@ $(document).ready( function () {
                       vari = `<a href=indexAusleihen.html?item=${oData.id}&name=Headset style='color: #00B0F0;'>Jetzt ausleihen</a>`;
                     }
                     else {
-                      vari = `<span>ausgeliehen</span>`;
+                      vari = `<a href=indexAbgeben.html?item=${oData.id}&name=Headset style='color: #00B0F0;'>Abgeben</a>`;;
                     }
                     $(nTd).html(vari);
                 }
