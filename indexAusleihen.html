@@ -11,7 +11,7 @@
   <body>
     <h1 id="headerName"></h1>
 
-    <form onsubmit="window.location.href='index.html'" id="formID">
+    <form id="formID">
         <div>
           <label>Name:</label>
           <input id="name" name="name" type="text">
@@ -21,8 +21,8 @@
           <input id="datum" name="date" type="date">
         </div>
         <div>
-          <input id="ausleihen" type="submit" name="update" value="Ausleihen">
-          <input id="abbrechen" type="submit" name="cancel" value="Abbrechen">
+          <input id="ausleihen" type="submit" name="update" value="Ausleihen"> <!-- Sends status to MYSQL DATABASE -->
+          <input id="abbrechen" type="submit" name="cancel" value="Abbrechen"> <!-- Returns to index.html -->
         </div>
      </form>
   </body>
