@@ -35,7 +35,7 @@ $(document).ready( function () {
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
                     let vari = ``;
                     if (oData.ausgeliehen === "false") {
-                      vari = `<a href=indexDetail.html?item=${oData.id} style='color: #00B0F0;'>Jetzt ausleihen</a>`;
+                      vari = `<a href=indexAusleihen.html?item=${oData.id}&name=Camera style='color: #00B0F0;'>Jetzt ausleihen</a>`;
                     }
                     else {
                       vari = `<span>ausgeliehen</span>`;

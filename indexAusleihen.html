@@ -2,9 +2,27 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Test</title>
+
+    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/stylesDetail.css">
+    <script src="./js/DetailView.js" charset="utf-8"></script>
   </head>
   <body>
+    <h1 id="headerName"></h1>
 
+    <form onsubmit="return yourJavaScript(this)">
+        <div>
+          <label>Name:</label>
+          <input id="name" name="name" type="text">
+        </div>
+        <div>
+          <label>Email:</label>
+          <input id="email" name="email" type="email">
+        </div>
+        <div>
+          <input id="submit" type="submit">
+        </div>
+    < /form>
   </body>
 </html>
