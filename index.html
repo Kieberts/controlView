@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control View</title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
+
+    <!-- Bootstrap5 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 
     <!-- Scripts -->
-    <script src="/js/main.js"></script>
-    <script src="/js/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Table -->
+    <script src="./js/tablesCamera.js"></script>
+    <script src="./js/tablesHeadset.js"></script>
+
+    <!-- jquery -->
+    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery/jquery.dataTables.min.js"></script>
+
+    <!-- Data Files -->
+    <script src="./json/camera.json"></script>
+    <script src="./json/headset.json"></script>
+
+
 </head>
 
 <body>
@@ -19,38 +37,27 @@
         <h1>Control View</h1>
     </section>
     <section id="control">
-        <div id="headsets">
-            <table id="productTable">
-                <thead>
-                <tr>
-                    <th style="width:50%">Headsets</th>
-                    <th>ausgeliehen</th>
-                    <th>Name</th>
-                    <th>Jetzt ausleihen</th>
-                </tr>
-                </thead>
-                <tbody>
+      <div id="tableDiv">
+              <table id="table" class="table table-striped" style="width: 100%;">
+                  <thead>
+                      <tr>
+                          <th>Headset</th>
+                          <th>ausgeliehen</th>
+                          <th>Ausgeleihen von</th>
+                          <th>ausleihen</th>
+                      </tr>
+                  </thead>
+                  <tfoot>
+                      <tr>
+                        <th>Headset</th>
+                        <th>ausgeliehen</th>
+                        <th>Ausgeleihen von</th>
+                        <th>ausleihen</th>
+                      </tr>
+                  </tfoot>
+              </table>
 
-                </tbody>
-
-                <!--
-                <tr id="headset1">
-                  <td>Headset 1</td>
-                  <td><span class="fa fa-check"> &#10004; </span></td>
-                  <td>Frei</td>
-                  <td><button id="testBtn" class="ausleihen" type="button" onclick="itemAusleihen()">hier</button></td>
-                </tr>
-                <tr>
-                  <td>Headset 2</td>
-                  <td><span class="fa fa-check"> &#10004; </span></td>
-                  <td>Frei</td>
-                  <td><button>hier</button></td>
-                </tr>-->
-            </table>
-        </div>
-    </section>
-    <section>
-        <button id="addItem" type="button" onclick="UpdateTableKameras()">add</button>
+          </div>
     </section>
 </div>
 
