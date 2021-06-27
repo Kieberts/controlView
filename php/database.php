@@ -8,12 +8,6 @@ $dbPort = "3306";
 
 $conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName, $dbPort);
 
-
-function fetch_posts() {
-  global $conn;
-  return $conn->query("SELECT * FROM `Camera`");
-}
-
 function convertCameraToJSON()
 {
   global $conn;
