@@ -6,11 +6,11 @@ $(document).ready( function () {
         dom: 'Dfrtip',
         'ajax': './json/camera.json',
         'columns':  [
-            { 'data': 'name' },
+            { 'data': 'geraetName' },
             { 'data': 'ausgeliehen',
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
                     let vari = ``;
-                    if (oData.ausgeliehen === "true") {
+                    if (oData.ausgeliehen === "1") {
                       vari = `<span>&#128994;</span>`;
                     }
                     else {
@@ -22,7 +22,7 @@ $(document).ready( function () {
             { 'data': 'ausleiher',
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
                     let vari = ``;
-                    if (oData.ausgeliehen === "true") {
+                    if (oData.ausgeliehen === "1") {
                       vari = `<span>${oData.ausleiher + " am " + oData.datum}</span>`;
                     }
                     else {
@@ -34,11 +34,11 @@ $(document).ready( function () {
             { 'data': 'id',
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
                     let vari = ``;
-                    if (oData.ausgeliehen === "false") {
-                      vari = `<a href=indexAusleihen.html?item=${oData.id}&name=Camera style='color: #00B0F0;'>Jetzt ausleihen</a>`;
+                    if (oData.ausgeliehen === "0") {
+                      vari = `<a href=indexAusleihen.php?item=${oData.id}&name=Camera style='color: #00B0F0;'>Jetzt ausleihen</a>`;
                     }
                     else {
-                      vari = `<a href=indexAbgeben.html?item=${oData.id}&name=Camera style='color: #00B0F0;'>Abgeben</a>`;
+                      vari = `<a href=indexAbgeben.php?item=${oData.id}&name=Camera style='color: #00B0F0;'>Abgeben</a>`;
                     }
                     $(nTd).html(vari);
                 }
