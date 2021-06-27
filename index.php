@@ -1,3 +1,7 @@
+<?php include("./php/database.php");
+    echo convertHeadsetToJSON();
+    echo convertCameraToJSON();
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>

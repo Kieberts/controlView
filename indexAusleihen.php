@@ -22,7 +22,7 @@
         </div>
         <div>
           <input id="ausleihen" type="submit" name="update" value="Ausleihen"> <!-- Sends status to MYSQL DATABASE -->
-          <input id="abbrechen" type="submit" name="cancel" value="Abbrechen"> <!-- Returns to index.html -->
+          <input id="abbrechen" type="submit" name="cancel" value="Abbrechen"> <!-- Returns to index.php -->
         </div>
      </form>
   </body>
