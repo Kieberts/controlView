@@ -9,8 +9,9 @@ var obj = {};
 // Sets items
 $(document).ready( function () {
   // Gets Obj
-  loadObj();
+  obj = loadObj();
 
+  console.log(obj);
   //
   buildPage();
 
@@ -60,14 +61,14 @@ function loadObj() {
     jsonObj = getJson('./json/headset.json');
   }
 
-  obj = getObj(jsonObj,id);
-  console.log(obj);
+  return getObj(jsonObj,id);
 }
 
 function buildPage() {
   // Sets Title
-    document.querySelector("title").innerText = getDetail('name');
+    //console.log(getDetail('geraetName'));
+    document.querySelector("title").innerText = getDetail('geraetName');
 
     // Sets H1
-    document.getElementById('headerName').innerText = getDetail('name');
+    document.getElementById('headerName').innerText = getDetail('geraetName');
 }
