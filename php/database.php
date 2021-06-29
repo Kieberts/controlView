@@ -47,3 +47,22 @@ function convertHeadsetToJSON()
         fclose($fp);
     }
 }
+
+function delete($id,$geraet)
+{
+  // not needed
+    global $conn;
+    $conn->query("DELETE FROM `ControlView`.`$geraet` WHERE (`id` = '$id');");
+}
+
+function updateAbgeben($id,$geraet)
+{
+  global $conn;
+  $conn->query("UPDATE `ControlView`.`$geraet` SET `ausgeliehen`=FALSE,`ausleiher`=null, `datum`=null where (`id` = '$id');");
+}
+
+function updateAusleihen($id,$geraet)
+{
+  global $conn;
+  $conn->query("UPDATE `ControlView`.`$geraet` SET `ausgeliehen`=FALSE,`ausleiher`=null, `datum`=null where (`id` = '$id');");
+}
