@@ -47,7 +47,7 @@
               <thead>
                   <tr>
                       <th>Kamera</th>
-                      <th>ausgeliehen</th>
+                      <th>Verfügbar</th>
                       <th>Ausgeleihen von</th>
                       <th>ausleihen</th>
                     </tr>
@@ -61,7 +61,7 @@
               <thead>
                   <tr>
                       <th>Headset</th>
-                      <th>ausgeliehen</th>
+                      <th>Verfügbar</th>
                       <th>Ausgeleihen von</th>
                       <th>ausleihen</th>
                   </tr>
