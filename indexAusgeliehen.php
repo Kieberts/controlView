@@ -1,6 +1,6 @@
 <?php
   include("./php/database.php");
-  echo updateAusleihen($_GET['item'],$_GET['name'],$_GET['nameAusleiher'],$_GET['dateAusleiher']);
+  echo updateAusleihen($_POST['item'],$_POST['name'],$_POST['nameAusleiher'],$_POST['dateAusleiher']);
 ?>
 
 <!DOCTYPE html>
