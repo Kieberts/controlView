@@ -61,8 +61,8 @@ function updateAbgeben($id,$geraet)
   $conn->query("UPDATE `ControlView`.`$geraet` SET `ausgeliehen`=FALSE,`ausleiher`=null, `datum`=null where (`id` = '$id');");
 }
 
-function updateAusleihen($id,$geraet)
+function updateAusleihen($id,$geraet,$name,$date)
 {
   global $conn;
-  $conn->query("UPDATE `ControlView`.`$geraet` SET `ausgeliehen`=FALSE,`ausleiher`=null, `datum`=null where (`id` = '$id');");
+  $conn->query("UPDATE `ControlView`.`$geraet` SET `ausgeliehen`=TRUE,`ausleiher`=$name, `datum`=$date where (`id` = '$id');");
 }
