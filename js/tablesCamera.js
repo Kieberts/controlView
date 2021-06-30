@@ -11,10 +11,10 @@ $(document).ready( function () {
                 'fnCreatedCell': function (nTd, sData, oData, iRow, iCol) {
                     let vari = ``;
                     if (oData.ausgeliehen === "1") {
-                      vari = `<span>&#128994;</span>`;
+                      vari = `<span>&#128308;</span>`;
                     }
                     else {
-                      vari = `<span>&#128308;</span>`;
+                      vari = `<span>&#128994;</span>`;
                     }
                     $(nTd).html(vari);
                 }
@@ -38,7 +38,7 @@ $(document).ready( function () {
                       vari = `<a href=indexAusleihen.php?item=${oData.id}&name=Camera style='color: #00B0F0;'>Jetzt ausleihen</a>`;
                     }
                     else {
-                      vari = `<a href=indexAbgeben.php?item=${oData.id}&name=Camera style='color: #00B0F0;'>Abgeben</a>`;
+                      vari = `<a href=indexAbgeben.php?item=${oData.id}&name=Camera style='color: #00B0F0;'>Zurückgeben</a>`;
                     }
                     $(nTd).html(vari);
                 }
