@@ -12,7 +12,7 @@
   <body>
     <h1 id="headerName"></h1>
 
-    <form id="formID" method="get" action="indexAusgeliehen.php">
+    <form id="formID" method="post" action="indexAusgeliehen.php">
         <div>
           <input id="idTag" name="item" type="hidden" value="<?php echo $_GET['item']; ?>">
         </div>
