@@ -1,1 +1,1 @@
-{"data":[{"id":"1","geraetName":"Headset 1","ausgeliehen":"0","ausleiher":null,"datum":null},{"id":"2","geraetName":"Headset 2","ausgeliehen":"1","ausleiher":"Tim","datum":"2020-06-27"},{"id":"3","geraetName":"Headset 3","ausgeliehen":"0","ausleiher":null,"datum":null}]}
+{"data":[{"id":"1","geraetName":"Headset 1","ausgeliehen":"1","ausleiher":"HKarl","datum":"2021-06-03"},{"id":"3","geraetName":"Headset 3","ausgeliehen":"0","ausleiher":null,"datum":null}]}
