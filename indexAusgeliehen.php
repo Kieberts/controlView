@@ -1,5 +1,6 @@
-<?php include("./php/database.php");
-  //echo updateAbgeben($_GET['item'],$_GET['name']);
+<?php
+  include("./php/database.php");
+  echo updateAusleihen($_GET['item'],$_GET['name'],$_GET['nameAusleiher'],$_GET['dateAusleiher']);
 ?>
 
 <!DOCTYPE html>
