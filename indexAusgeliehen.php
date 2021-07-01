@@ -1,6 +1,7 @@
 <?php
   include("./php/database.php");
   echo updateAusleihen($_POST['item'],$_POST['name'],$_POST['nameAusleiher'],$_POST['dateAusleiher']);
+  header("Location: index.php");
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,5 @@
     </style>
   </head>
   <body>
-    <p>Erfolgreich ausgeliehen</p>
-    <p><a href="index.php">Zurück</a></p>
   </body>
 </html>

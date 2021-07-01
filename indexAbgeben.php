@@ -1,5 +1,6 @@
 <?php include("./php/database.php");
   echo updateAbgeben($_GET['item'],$_GET['name']);
+  header("Location: index.php");
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,5 @@
     </style>
   </head>
   <body>
-    <p>Erfolgreich abgeben</p>
-    <p><a href="index.php">Zurück</a></p>
   </body>
 </html>
