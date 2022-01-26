@@ -70,5 +70,28 @@ function buildPage() {
     document.querySelector("title").innerText = getDetail('geraetName');
 
     // Sets H1
-    document.getElementById('headerName').innerText = getDetail('geraetName');
+    document.getElementById('headerName').innerText = "Gerätname: " + getDetail('geraetName');
+
+    // Unables Submit Button until both inputs are filled out!
+    document.getElementById('send').disabled = true;
+
+    document.getElementById('pflichtFeldName').innerHTML  = "<span>Name</span><span style='color: darkred'>*</span><span>: </span>";
+    document.getElementById('pflichtFeldDatum').innerHTML  = "<span>Datum</span><span style='color: darkred'>*</span><span>: </span>";
+
+}
+
+function checkInput() {
+  document.getElementById('send').disabled = true;
+
+  let x = document.getElementById('inputName').value;
+  let y = document.getElementById('inputDate').value;
+  if (x === "") {
+      document.getElementById('send').disabled = true;
+  }
+  else if (y === "") {
+    document.getElementById('send').disabled = true;
+  }
+  else{
+    document.getElementById('send').disabled = false;
+  }
 }
