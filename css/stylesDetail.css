@@ -2,8 +2,25 @@ body {
   width: 700px;
   margin: auto;
   font-size: 20px;
+
 }
 
-#formID div {
-  margin-bottom: 50px;
+.formID-input {
+  margin-bottom: 30px;
+}
+
+#content {
+  width: 700px;
+  background-color: lightgrey;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.hint {
+  font-size: 12px;
+}
+
+#pflicht {
+  font-size: 11px;
+  color: darkred;
 }
