@@ -1,10 +1,15 @@
 <?php
+require 'vendor/autoload.php';
 
-$dbServername = "164.68.126.121";
-$dbName = "ControlView";
-$dbUsername = "sebastian";
-$dbPassword = "123qweASD#";
-$dbPort = "3306";
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+
+$dbServername = $_ENV['db_Servername'];
+$dbName = $_ENV['db_Name'];
+$dbUsername = $_ENV['db_Username'];
+$dbPassword = $_ENV['db_Password'];
+$dbPort = $_ENV['db_Port'];
 
 $conn = new mysqli($dbServername, $dbUsername, $dbPassword, $dbName, $dbPort);
 
