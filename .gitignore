@@ -1,7 +1,7 @@
 .idea/
 .git/
 
-.vendor/
+vendor/
 
 php/.env
 
